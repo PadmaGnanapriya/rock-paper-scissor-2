@@ -7,6 +7,8 @@ function rpsGame(yourChoose){
    results=decideWinner(humanChoice,botChoice);
    message=finalMessage(results); 
    console.log(message);
+   rpsFrontEnd(humanChoice,botChoice,message);
+   
 }
 
 function randToRpsInt(){
@@ -60,5 +62,5 @@ function rpsFrontEnd(humanImageChoice,botImageChoice,finalMessage){
         document.getElementById('flex-box-rps-div').appendChild(humanDiv);
         document.getElementById('flex-box-rps-div').appendChild(messageDiv);
         document.getElementById('flex-box-rps-div').appendChild(botDiv);
-        console.log("Ganja nadda bn");
+
 }
